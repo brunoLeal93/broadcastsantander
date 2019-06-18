@@ -41,7 +41,7 @@ class noticias:
                     self.vet_final.pop(-1)
                 else:
                     self.vet_final.append(x)
-        self.montaHtml()
+        self.montaHtml() 
 
     def montaHtml(self):
         self.html=""
