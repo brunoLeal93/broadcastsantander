@@ -42,7 +42,6 @@
 
     <div class="windowtv">
         <div class="coluna-1">
-            
             <div class="row stnd-news mr-0">
                 <div class="col-2">
                     <img class="img-fluid mt-md-5" src="../static/img/LOGO-BC-Financeiro-Marca.png"/>
@@ -57,7 +56,28 @@
             </div>
         </div>
     </div>
+    <div id="myId">Original</div>
+    <script>
+        var div = document.getElementById("myId");
 
+        // Adicionando ouvinte de clique
+        div.addEventListener("click", function (event) {
+            div.innerHTML = "Alterado =)";
+        });
+
+        // Criando um intervalo
+        var interval = setInterval(function () {
+            location.reload(true)
+            
+            //var date = new Date();
+            //div.innerHTML = date.toLocaleTimeString();
+
+            //if (date.getSeconds() % 5 == 0) {
+            //    div.innerHTML = "Intervalo cancelado :)";
+            //    clearInterval(interval);
+            //}
+        }, 1000 * 60/* 1s */);
+    </script>
 </body>
 
 
