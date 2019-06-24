@@ -7,12 +7,12 @@ n = noticias()
 
 @app.route('/', methods=('GET', 'POST'))
 def home():
-    n.ultimas10()
-    print(n.html)
-    return render_template('Santander.html', html=n.html)
+    #n.ultimas10()
+    #print(n.html)
+    return render_template('Santander.html')
 
 @app.route('/teste', methods=('GET', 'POST'))
 def teste():
     n.ultimas10()
-    print(n.html)
+    #print(n.html)
     return render_template('noticias.html', html=n.html)

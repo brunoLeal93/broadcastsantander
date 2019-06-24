@@ -7,7 +7,7 @@ from pprint import pprint
 class noticias:
     aux = datetime.date.today()
     hj = str(aux).replace("-","")
-    url = "http://cp.ae.com.br/AEContent/output/NewsServlet?10039=9&10065=xml&10023=1&10095=9&10098="+hj
+    url = "http://cp.ae.com.br/AEContent/output/NewsServlet?10039=9&10065=xml&10023=2&10095=9&10098="+hj
     vet_final = []
     old_vet = []
     html=""
