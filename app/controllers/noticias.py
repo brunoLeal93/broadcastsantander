@@ -7,7 +7,8 @@ from pprint import pprint
 class noticias:
     aux = datetime.date.today()
     hj = str(aux).replace("-","")
-    url = "http://cp.ae.com.br/AEContent/output/NewsServlet?10039=9&10065=xml&10023=2&10095=9&10098="+hj
+    print(hj)
+    url = "http://cp.ae.com.br/AEContent/output/NewsServlet?10039=9&10065=xml&10023=2&10095=9&10098="+"20190720"
     vet_final = []
     old_vet = []
     html=""
@@ -21,7 +22,8 @@ class noticias:
         #print(soup)
         vet_titulo = soup.find_all('titulo')
         vet_datahora = soup.find_all('data')
-        #print(vet_titulo)
+    
+        print(vet_titulo)
         #print(vet_datahora)
         #print(datetime.datetime.strptime(vet_datahora[0].get_text(), "%Y%m%d%H%M%S"))
         vet_0 = []
